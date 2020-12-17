@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- Aidan's work for 6-01, which uses RNG to roll a dice, and asks the user what the dice rolled. -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Aidan's work for Unit 6-01.">
+    <meta name="keywords" content="MTHS, Website, Unit 6-01">
+    <meta name="author" content="Aidan Lalonde-Novales">
+    <meta name="viewport" content="width=device-width">
+    <title>Unit 6-01, By Aidan</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="maincontent">
+      <h1 class="text">Guess the Dice Roll</h1>
+      <hr class="splitter">
+      <img src="images/dice.jpeg" alt="Dice" class="dice">
+      <table class="table">
+        <tr>
+          <td>What number will the dice roll?</td>
+          <td><input type="text" id="userguess"></td>
+        </tr>
+        <tr>
+          <td><input class="bigbutton" type="submit" id="submitbutton"></td>
+        </tr>
+        <tr>
+          <td>Your answer was...</td>
+          <td id="result"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="bigbutton" onclick="location.href='https://unit-6-01.aidanln.repl.co/';">Try Again?</button></td>
+        </tr>
+      </table>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
