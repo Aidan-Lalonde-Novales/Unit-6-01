@@ -3,9 +3,11 @@
 document.getElementById('submitbutton').addEventListener('click', guessChecker)
 
 function guessChecker () {
-  const rolledNumber = Math.floor(Math.random() * 6) + 1 // Uses RNG to produce a number from 1-6
-  const guessedNumber = document.getElementById('userguess').value // Makes the value of the textbox into a variable
-  if (guessedNumber == rolledNumber) {
+  const preRolledNumber = Math.floor(Math.random() * 6) + 1 // Uses RNG to produce a number from 1-6
+  const preGuessedNumber = document.getElementById('userguess').value // Makes the value of the textbox into a variable
+  const rolledNumber = parseInt(preRolledNumber) // Converts to interger
+  const guessedNumber = parseInt(preGuessedNumber) // Converts to interger
+  if (guessedNumber === rolledNumber) {
     document.getElementById('result').innerHTML = 'Correct!'
   } else if (guessedNumber >= 7) {
     document.getElementById('result').innerHTML = 'Really?'
